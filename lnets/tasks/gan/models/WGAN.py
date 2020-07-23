@@ -266,3 +266,4 @@ class WGAN(object):
     def load(self):
         self.G.load_state_dict(torch.load(os.path.join(self.model_dir, self.model_name + '_G.pkl')))
         self.D.load_state_dict(torch.load(os.path.join(self.model_dir, self.model_name + '_D.pkl')))
+
